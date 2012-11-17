@@ -1,7 +1,7 @@
 Holo theme for gnome shell & gtk 3.4
 
  > Based on the excellent work from Tiheum : [Holo theme on DeviantArt](http://tiheum.deviantart.com/art/Holo-280076980)     
- > This repository helps to have Gnome 3.4 working with this Holo theme.     
+ > This repository helps to have Gnome 3.6 working with this Holo theme.     
  > It doesn't aim to be backward compatible with Gnome 3.2.
 
 Et un grand merci à Tiheum pour toutes ses icones/thèmes !
@@ -62,6 +62,10 @@ So edit your ```~/.fonts.conf``` and fill with :
         </edit>
     </match>
 </fontconfig>
+
+Note
+====
+I use cinnamon as a DE on Ubuntu 12.04, so that's the only configuration where this is tested by me. Cinnamon doesn't use nautilus as a file manager but uses Nemo instead. Just want to note that my goal is to make this compatible with what I use, you are welcome to adapt it as you see fit.
 
 ```
 
