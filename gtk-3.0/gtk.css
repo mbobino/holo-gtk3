@@ -5,15 +5,22 @@
 	DESCRIPTION: Ice Cream Sandwich (Android 4) theme for gtk3 apps.
 */
 
+/*
+	MODIFIED: mbobino
+	WEBSITE: http://github.com/mbobino/holo-gtk3
+	LICENSE: GPL
+	DESCRIPTION: Updates and enhancements for gnome 3.6
+*/
+
 /* default color scheme */
-@define-color bg_color #f2f2f2;
-@define-color fg_color #2c2c2c;
-@define-color base_color #ffffff;
-@define-color text_color #2c2c2c;
-@define-color selected_bg_color #0099cc;
-@define-color selected_fg_color #ffffff;
-@define-color tooltip_bg_color #F5F5B5;
-@define-color tooltip_fg_color #2c2c2c;
+@define-color bg_color #f2f2f2; 		/* window backgrounds */
+@define-color fg_color #2c2c2c;			/* title bar */
+@define-color base_color #ffffff;		/* white */
+@define-color text_color #2c2c2c;		/* grey text */
+@define-color selected_bg_color #0099cc;	/* selected item */
+@define-color selected_fg_color #ffffff;	/* white */
+@define-color tooltip_bg_color #F5F5B5;		/* yellow tooltip background */
+@define-color tooltip_fg_color #2c2c2c;		/* grey text on tooltips */
 
 /* other color schemes could simply override these */
 @define-color theme_bg_color @bg_color;
