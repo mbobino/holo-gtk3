@@ -1242,7 +1242,7 @@ background-color: rgba(0,0,0,0.85);
 }
 
 .menu-favorites-button:hover {
-    border: 1px solid #99CC00;
+    border: 1px solid #33b5e5;
 }
 
 .menu-places-box {
@@ -1320,7 +1320,7 @@ background-color: rgba(0,0,0,0.85);
     padding-right: 7px;
     padding-bottom: 7px; 
     color: white;
-    border: 1px solid #99CC00;
+    border: 1px solid #33b5e5;
 }
 
 .menu-category-button-label:ltr { 
