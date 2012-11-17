@@ -698,7 +698,7 @@ GtkIconView.view.cell:selected:focused {
     border-image: none;
     background-image: url("assets/blank.png");
     text-shadow: none;
-    border-width: 0px 0px 4px 0px;
+    border-width: 0px 0px 2px 0px;
     border-color: #33b5e5;
     border-style: solid;
 }
