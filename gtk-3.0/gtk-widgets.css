@@ -825,15 +825,15 @@ GtkImage {
 }
 
 .notebook tab {
+  /* background-image: url("assets/blank.png"); */
   background-color: #E0E0E0;
-  border-width: 0px 1px 10px 1px;
-  padding: 5px 2px 7px 2px;
-  border-image : url("assets/notebook-tab-normal.svg") 0 1 4 1 stretch;
+  padding: 2px 2px 2px 2px;
+/*  border-image : url("assets/notebook-tab-normal.svg") 0 1 4 1 stretch; 
   background-image : -gtk-gradient (linear,
                left top, right bottom,
                from(#E0E0E0), to(#E0E0E0));
 	-unico-focus-border-color: transparent;
-	-unico-focus-fill-color: transparent;
+	-unico-focus-fill-color: transparent; */
 }
 
 .notebook tab GtkLabel {
@@ -842,15 +842,20 @@ GtkImage {
 }
 
 .notebook tab:active {
-  background-color:#33b5e5;
-  border-image: url("assets/notebook-tab-active.svg") 0 1 4 1 stretch;
+  background-image: url("assets/tab-selected.svg");
+  /* background-color: #33b5e5; */
+  border-color: #33b5e5;
+  border-width: 0px 0px 2px 0px;
+  border-style: solid;
+  padding: 2px 2px 2px 2px;
+/*  border-image: url("assets/notebook-tab-active.svg") 0 1 4 1 stretch; */
 }
 
-.notebook tab:active:focused {
+/* .notebook tab:active:focused {
   background-image : -gtk-gradient (linear,
                left top, right bottom,
                from(#78C6E3), to(#78C6E3));
-}
+} */
 
 .notebook tab.right,
 .notebook tab.left,
