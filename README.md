@@ -63,11 +63,13 @@ So edit your ```~/.fonts.conf``` and fill with :
     </match>
 </fontconfig>
 
+
+```
+
 Note
 ====
 I use cinnamon as a DE on Ubuntu 12.04, so that's the only configuration where this is tested by me. Cinnamon doesn't use nautilus as a file manager but uses Nemo instead. Just want to note that my goal is to make this compatible with what I use, you are welcome to adapt it as you see fit.
 
-```
 
 Finally, you can then use gnome-tweak-tool to setup everything.
 
