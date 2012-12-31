@@ -1,80 +1,48 @@
-Holo theme for gnome shell & gtk 3.4
+Info:
+=====
+* GTK2 based on [Holo by Tiheum](http://tiheum.deviantart.com/art/Holo-280076980)
+* GTK3 based on [Holo 3 by r3gis3r](https://github.com/r3gis3r/Holo-Gnome3-Theme)
+* Cinnamon based on 
+* Only tested on [Ubuntu 12.04 LTS](http://releases.ubuntu.com/precise/) with [Cinnamon Desktop](http://cinnamon.linuxmint.com)
 
- > Based on the excellent work from Tiheum : [Holo theme on DeviantArt](http://tiheum.deviantart.com/art/Holo-280076980)     
- > This repository helps to have Gnome 3.6 working with this Holo theme.     
- > It doesn't aim to be backward compatible with Gnome 3.2.
-
-Et un grand merci à Tiheum pour toutes ses icones/thèmes !
-
-Installation
-============
-
+Installation:
+=============
 To install it directly using command line :
 
     # Install git (if not already)
     sudo apt-get install git
+
     # Create .themes folder (if not already)
     mkdir ~/.themes
+
     # Checkout git repo
-    cd ~/.themes && git clone git://github.com/r3gis3r/Holo-Gnome3-Theme.git
+    cd ~/.themes && git clone git://github.com/mbobino/holo-gtk3.git
+
     # Optionally link root theme folder to your folder
     sudo ln -s ~/.themes ~root/.themes
 
-
-Extra configuration
-===================
-## Firefox
-If you are a Firefox user, you may also appreciate [~illusionmist Holo Stylish script for Firefox](http://illusionmist.deviantart.com/art/Holo-Theme-for-Firefox-294051732)
-
-## Thunderbird
-And the thunderbird script [my Holo Stylish script for Thunderbird](http://userstyles.org/styles/64593/holo-theme-for-thunderbird-linux-thunderbir-11?r=1335276031)
-
-## Fonts
-You may also want to install Roboto fonts
-
-To do so use following command lines :
+Fonts:
+======
+To install Roboto fonts:
 
     # Get roboto fonts
     wget http://www.fontsquirrel.com/fonts/download/roboto -O roboto.zip
+
     # Create .fonts theme (if not already)
     mkdir ~/.fonts
+
     # Unzip fonts in folder
     unzip roboto.zip -d ~/.fonts
 
-If you plan to use _Roboto Light_ instead of _Roboto_, you'll notice weird behavior from apps such as Thunderbird and Pidgin.     
-It's because they try to use _Roboto_ in weight normal which resolves to Medium style and it will appear bold for you.    
-So, you have to force the resolution of _Roboto_ into _Roboto Light_ for _normal_ weight.
-So edit your ```~/.fonts.conf``` and fill with :
+To Do:
+======
+* Fix misc issues in themes.
+* Add Google Chrome theme that matches.
 
-```xml
-<?xml version="1.0"?>
-<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
-<fontconfig>
-    <match target="pattern">
-        <test name="family" qual="any">
-            <string>Roboto</string>
-        </test>
-        <test name="weight" compare="less_eq">
-            <const>normal</const>
-        </test>
-        <edit mode="assign" name="weight">
-            <const>light</const>
-        </edit>
-    </match>
-</fontconfig>
+* Basically I'd like to theme an Ubuntu install to mimic the android frameworks.
 
-
-```
-
-Note
-====
-I use cinnamon as a DE on Ubuntu 12.04, so that's the only configuration where this is tested by me. Cinnamon doesn't use nautilus as a file manager but uses Nemo instead. Just want to note that my goal is to make this compatible with what I use, you are welcome to adapt it as you see fit.
-
-
-Finally, you can then use gnome-tweak-tool to setup everything.
-
-
-----
-
-Remember that the Holo theme is released under GPLv3 license.
-And don't hesitate to share if you modify for your own needs ;).
+Legal:
+======
+Holo is released under GPLv3.
+AOSP artwork is released under Apache license.
+So long as you follow the rules in these licenses you can pretty much do what you want with these files. If you have changes that you'd like me to add feel free to send me a pull request and I'll see about adding them.
